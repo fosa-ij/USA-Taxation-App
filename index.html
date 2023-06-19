@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="flex">
+        <h1>Workers Taxation</h1>
+    
+        <section class="form-section">
+            <h2>Worker Entries</h2>
+            <form action="">
+                <!-- <label for="name">Name: </label> -->
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+        
+                <!-- <label for="company">Company: </label> -->
+                <input type="text" name="company" id="company" placeholder="Company"><br>
+        
+                <!-- <label for="wagePerHour">Hourly Wage: </label> -->
+                <input type="number" name="wagePerHour" id="wagePerHour" placeholder="Hourly Wage"><br>
+        
+                <!-- <label for="workHours">Weekly Work Hours: </label> -->
+                <input type="number" name="workHours" id="workHours" placeholder="Weekly Work Hours"><br>
+        
+                <!-- <label for="years">Years: </label>
+                <input type="number" name="years" id="years"><br> -->
+                <button id="btn">Calculate Tax</button>
+            </form>
+        </section>
+    <br>
+        <section class="table-section">
+            <h2>Taxation Table</h2>
+            <div>
+                <h3 class="summary"></h3>
+            </div>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td class="name">...</td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td class="company">...</td>
+                    </tr>
+                    <tr>
+                        <td>Wage Per Hour</td>
+                        <td class="wagePHr">...</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly Work Hours</td>
+                        <td class="workHr">...</td>
+                    </tr>
+                    <tr>
+                        <td>Years At company</td>
+                        <td class="years">...</td>
+                    </tr>
+                    <tr>
+                        <td>Current Annual Income</td>
+                        <td class="annualIncome">...</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Rate</td>
+                        <td class="taxRate">...</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total Tax Paid</td>
+                        <td class="totalTax">...</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
